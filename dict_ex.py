@@ -43,5 +43,11 @@ value3 = D5['x'] if 'x' in D5 else 0
 print(value3)
 
 #Сортировка ключей
+print('\n' * 2)
 
+ks = list(D5.keys())
+ks.sort()
+print(ks)
 
+for key in ks:
+	print(key, '=>', D5[key])
